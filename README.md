@@ -18,7 +18,7 @@ iTransect – A Language Detector cum Translator
 
 ### **Project Domain:**
 
-Domain
+Natural Language Processing
 
 ### **Summary:**
 
