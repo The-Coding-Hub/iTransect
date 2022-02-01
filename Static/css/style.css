@@ -1,0 +1,41 @@
+.main {
+  min-height: calc(100vh - 56px - 50px);
+}
+
+.logo {
+  width: 6%;
+  display: block;
+  margin: auto;
+}
+
+a.nav-link {
+  color: white;
+}
+
+.cen-btn {
+  display: block;
+  margin: auto;
+}
+
+.result {
+  border: 2px solid rgb(223, 221, 221);
+  border-radius: 6px;
+}
+
+.resultText {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.aboutSection {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutSection {
+    width: 96%
+  }
+  .para {
+    font-size: 16px;
+  }
+}

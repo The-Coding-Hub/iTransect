@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+
+<div class="container py-4">
+  <img src="/Static/img/logo.png" alt="Logo" class="img-fluid mb-2 logo">
+  <h2 class="h2 fw-normal text-center">Welcome to iTransect</h2>
+  <form action="/" method="post">
+    <div class="mb-3">
+      <label for="toLang" class="form-label">Language to convert the text</label>
+      <select id="toLang" name="toLang" class="form-select" aria-label="Default select example">
+        <option value="None" selected>None</option>
+        {% for item in keys %}
+        <option value="{{ langs[item] }}">{{ item }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="text" class="form-label">Text</label>
+      <div class="form-floating">
+        <textarea class="form-control" id="text" name="text" style="height: 148px;"></textarea>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary cen-btn">Submit</button>
+  </form>
+  <div class="result my-2">
+    <h2 class="h2 fw-normal text-center my-2">Result</h2>
+    {% if result == "" %}
+    <p class="text-center">Result will come here!</p>
+    {% else %}
+    <div class="px-4">
+      <p class="resultText">{{ result[0] | safe }}</p>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock body %}

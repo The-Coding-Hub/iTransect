@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %} About {% endblock title %}
+{% block body %}
+
+<div class="container py-4 aboutSection">
+  <h2 class="h2 fw-normal text-center">About iTransect</h2>
+  <div class="fs-5">
+    <h4 class="h4 fw-normal">About Web App</h4>
+    <p class="para">
+      This application is an AI and NLP enabled language detector cum translator. It can first of all detect the language used in the text entered by the user. Then it can also convert the text in your desired language. This app has a capability to recognize and translate text to over 15 languages.
+    </p>
+    <h4 class="h4 fw-normal">App Requirement</h4>
+    <p class="para">
+      We frequently face problems while reading google articles or while going through websites which are not in english language or our mother tongue. Many rural people also don't understand any language except their Mother Tongue. So they can also translate the text and go through it.
+    </p>
+    <h4 class="h4 fw-normal">My Solution</h4>
+    <p class="para">
+      My Solution for the above stated problem is that we can create a translator to translate the text into a language which we can understand. But the problem is that we need to first recognize that the original text is written in which language and mostly we fail to do so. For this reason my application would just take the text as input, recognize the language of the text and then it would also translate the text into our desired language.
+    </p>
+    <h4 class="h4 fw-normal">App Working</h4>
+    <p class="para">
+      In this app I have used the concepts of the “Natural Language Processing” Domain of “Artificial Intelligence”. We have used the Bag of Words Algorithm and Concepts of Text PreProcessing. I have also used a huge dataset of more than 10,000 rows. This dataset contains over 15 languages and texts on every language. I have also used Models of the Scikit-Learn Library to predict the language used in a text.
+    </p>
+    <h4 class="h4 fw-normal">More Information</h4>
+    <p class="para">
+      <h5 class="h5 fw-normal">Features:</h5>
+      <ul>
+        <li class="para">Text</li>
+        <li class="para">Language</li>
+      </ul>
+      <h5 class="h5 fw-normal" style="display: inline;">Label:</h5> <span class="para">Prediction of Language used in a newer Text!</span>
+      <h5 class="h5 fw-normal">Technologies Used:</h5>
+      <ul>
+        <li class="para">Bootstrap 5: For Front-End Development</li>
+        <li class="para">Flask: For Backend Development of the Web App</li>
+        <li class="para">Python: For NLP and Web App Development</li>
+        <li class="para">Pandas, Regex, Seaborn, Matplotlib, Scikit-Learn, Pickle, GoogleTrans: For “Natural Language Processing”</li>
+        <li class="para">Pickle: For Saving/Storing NLP Model</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+{% endblock body %}
